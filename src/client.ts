@@ -535,10 +535,12 @@ export function createClient(options: ClientOptions): Client {
         };
       },
       emit<E extends Event>(event: E, ...args: Parameters<EventListener<E>>) {
+        console.log("attempting emit",event)
         for (const listener of listeners[event]) {
           // @ts-expect-error: The args should fit
           listener(...args);
         }
+        console.log("emission complete",event)
       },
     };
   })();
@@ -570,7 +572,7 @@ export function createClient(options: ClientOptions): Client {
 
             retries++;
           }
-
+          
           emitter.emit('connecting');
           const socket = new WebSocketImpl(
             typeof url === 'function' ? await url() : url,

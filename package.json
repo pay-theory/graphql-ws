@@ -1,5 +1,5 @@
 {
-  "name": "graphql-ws",
+  "name": "@paytheory/graphql-ws",
   "version": "5.5.0",
   "description": "Coherent, zero-dependency, lazy, simple, GraphQL over WebSocket Protocol compliant server and client",
   "keywords": [
@@ -17,12 +17,12 @@
     "fastify",
     "uwebsockets"
   ],
-  "author": "Denis Badurina <badurinadenis@gmail.com>",
+  "author": "Aron Price <aron@paytheory.com> (via Denis Badurina <badurinadenis@gmail.com>)",
   "license": "MIT",
-  "homepage": "https://github.com/enisdenjo/graphql-ws#readme",
+  "homepage": "https://github.com/pay-theory/graphql-ws#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/enisdenjo/graphql-ws.git"
+    "url": "https://github.com/pay-theory/graphql-ws.git"
   },
   "engines": {
     "node": ">=10"
